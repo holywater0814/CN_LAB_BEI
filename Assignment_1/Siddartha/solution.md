@@ -1,7 +1,7 @@
 ﻿
 **IP address** : 192.168.1.71
 
-**Subnet Mask** : 0xffffff00 or /24
+**Subnet Mask** : 255.255.255.0 or /24
 
 **Network address** : 192.168.1.0
 
