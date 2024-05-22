@@ -1,5 +1,5 @@
 ﻿
-**IP address** : 192.168.1.82
+**IP address** : 192.168.1.71
 
 **Subnet Mask** : 0xffffff00 or /24
 
