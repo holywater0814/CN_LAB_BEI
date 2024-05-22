@@ -14,7 +14,7 @@ subnet mask.
 *host bits* = 8
 hence supported end devices = 2^8-2=254
 We subtracted 2 because one of the address is network address and where first 8
-bits from right hand side will all be 0 and of the address is boardcasting address
+bits from right hand side will all be 0 and of the address is broadcasting address
 where first 8 bits will be all 1 .
 
 
