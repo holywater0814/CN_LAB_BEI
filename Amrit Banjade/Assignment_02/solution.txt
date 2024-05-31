@@ -1,0 +1,195 @@
+1):
+The differences between OSI & TCP/IP model are :
+
+a.
+OSI is the generic, protocal independent standard, acting as the
+communication gateway between the network and end user.
+TCP/IP model is based on standard protocals around which the Internet
+is developed. It is a communication protocal, which allows connection
+of hosts over a network 
+
+b.
+In OSI model the transport layer gurantees the delivery of packets.
+In TCP/IP model the transport layer does not guarantees delivery of
+packets. Still the TCP/IP model is more reliable.
+
+c.
+OSI model follows vertical approach while 
+TCP/IP model follows horizontal approach.
+
+d.
+OSI model has a saparate Presentation layer and Session layer,while 
+TCP/IP model does not have a separate Presentation layer or Session
+layer.
+
+e.
+OSI is a reference model around which the networks are built. 
+Generally it is used as a guidance tool.
+TCP/IP model is, in a way implementaiton of the OSI model.
+
+f. 
+OSI model has 7 different layers , while 
+TCP/Ip model has 5 different layers.
+
+g.
+OSI model was developed before the development of the protocols.
+In TCP/Ip model , protocols were developed first and then only model was 
+developed.
+
+h. 
+OSI model supports connectionless and conncection-oriented communication
+in the network layer.
+TCP/IP model supports only connectionless communication in the network 
+layer.
+
+
+
+
+
+
+2) 
+The differences between  Client-Server network architecture & Peer-to-Peer 
+network architecture are: 
+a.(Basic)
+In a client-server network , we have a specific server and specific clients
+connected to the server.
+In a peer-to-peer network , client are not distinguished; every node act as
+as a client and server.
+
+b.(Expense)
+A client-server network is more expensive to implement.
+A peer-to-peer network is less expensive to implement.
+
+c.(Stability)
+A client-server network is more stable and scalable than a peer-to-peer network.
+A peer-to-peer network is less stable and scalable,if the number of peers
+increases the system.
+
+d.(Data)
+In a client-server network , the data is stored ina centralized server.
+In a peer-to-peer network, each peer has its own data.
+
+e.(Server)
+A server may get overloaded when many customers make simulteneous service
+requests in a client-server network .
+A Server is not bottlenecked since the services are distributed among 
+numerous servers usinga a peer-to-peer network.
+
+f.(Focus)
+Client-server network architecture focuses on sharing the information.
+Peer-to-peer network focuses on connectivity.
+
+g.(service)
+In client-server network , the server provides the requested service in 
+response to the client's request.
+In peer-to-peer network, each node has the ability to both request and delivery
+services.
+
+h.(Performance)
+In client-server , the server does the bulk of the work, performance is 
+unaffected by the growth of clients.
+Because resources are shared in a big peer-to-peer network,performance will 
+likely to suffer.
+
+i. (Security)
+A Client-Server network is a secured network because the server can verify a
+client's access to any area of the network, making it secure.
+The network's security deteriorates, and its susceptibility grows as the 
+number of peers rises.
+
+
+
+3)
+The seven layers of OSI model are : 
+
+a. Physical Layer: Its purpose is establishing, maintain, and terminate 
+communication between two endpoints on different networks. It does this
+by defining the connection type (wired or wireless), medium of 
+transmission (fibre optic cable, copper wire, etc.), signal types 
+(analogue or digital) and electric voltages used in data transmission. 
+The physical layer also handles issues related to synchronization and 
+addressing at the media level. In addition, it defines how devices interact 
+with each other at a hardware level so that data can be sent between them successfully.
+
+b. Data link Layer:
+The Data Link Layer provides reliable data transmission over a physical communication
+link. It handles the physical addressing of each node and ensures that data is 
+properly transferred between two connected nodes on a network. This OSI layer also
+defines how the network will handle data errors, retransmitting lost packets, and
+flow control mechanisms such as windowing.
+
+c. Network layer:
+This OSI Layer is mainly responsible for routing data packets from one node to another
+on a network. It establishes logical paths between endpoints (nodes) on a network and
+determines the best route for each packet to take to reach its destination. This OSI
+layer also handles addressing, subnetting, packet fragmentation and reassembly, and
+traffic congestion control mechanisms if needed.
+
+d. Transprt layer:
+The Transport Layer is primarily responsible for providing reliable end-to-end delivery
+of data packets across a network. It segments large data units into smaller ones 
+(called frames) so that they can be transferred more efficiently between nodes on 
+a network. This layer in OSI also handles the retransmission of lost or damaged 
+packets and flow control mechanisms such as sliding windows.
+
+e. Session layer:
+The Session Layer in OSI is majorly responsible for creating, maintaining, and managing
+the communication between two endpoints (nodes) on a network. It establishes logical 
+(virtual) connections between host systems, coordinates data exchange between nodes, 
+handles token-passing mechanisms to control access to shared resources on a network, 
+and provides security measures such as encryption for data integrity.
+
+f. Presentation layer:
+The Presentation Layer in OSI is for converting data from one format to some other so 
+that it can be understood by both endpoints (nodes) on a network. It translates 
+application data sent across a network into an agreed-upon format and compresses it 
+if needed to reduce overall transmission time. This layer in OSI also provides 
+security measures such as encryption to ensure data integrity.
+
+g. Application layer:
+The Application Layer provides services to end-users, such as file transfer, 
+web browsing, email, and chat. This OSI layer can also provide access to 
+network resources, such as databases and printers.
+
+
+
+
+4) The principles behind the OSI model are :
+Layered Approach: 
+The OSI model divides the complex task of network communication into seven distinct 
+layers, making it easier to manage, design, and troubleshoot networks.
+
+Independence of Layers: 
+Each layer should perform its functions independently of the other layers, interacting
+only with the immediately adjacent layers. This modularity allows for flexibility and 
+ease of updates and changes.
+
+Standardization: 
+The OSI model provides a standardized approach for different network hardware and 
+software to communicate, ensuring compatibility and interoperability between 
+different systems and vendors.
+
+Abstraction: 
+The model abstracts the network functions into layers, allowing developers to focus 
+on specific aspects of network communication without needing to understand the 
+entire stack.
+
+Encapsulation and Decapsulation: 
+Data transmitted over a network is encapsulated with protocol-specific headers and 
+trailers as it moves down the layers and decapsulated as it moves up. This process 
+ensures that each layer handles only the relevant information.
+
+Peer-to-Peer Communication: 
+At each layer, communication occurs between corresponding layers (peers) on different 
+devices. For example, the transport layer on one device communicates with the 
+transport layer on another device using transport layer protocols.
+
+Flexibility and Scalability: 
+The model supports a wide range of protocols and technologies, allowing for the 
+evolution and scalability of network systems.
+
+
+
+
+
+
