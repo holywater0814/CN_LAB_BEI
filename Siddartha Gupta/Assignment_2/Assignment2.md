@@ -33,8 +33,9 @@ network architecture are:
 
 7 Layers of the OSI Model are mentioned below:
 
-#### 1) Physical layer
 ---
+#### 1) Physical layer
+
 - It is the bottom-most or the first layer of the OSI Model
 - It comprises the raw data which is further transmitted to the higher layers of the structure
 - Preparing the physical devices in the network and accepting the received data for transmission
@@ -43,7 +44,7 @@ network architecture are:
 ---
 
 #### 2) Data Link Layer
----
+
 - Access to get the data is achieved at this layer
 - It breaks the input data into frames which makes analysing the data easier
 - Ensures that the data received is free of any errors
@@ -54,7 +55,7 @@ network architecture are:
 
 #### 3) Network Layer
 
----
+
 - It acts as a network controller
 - Transferring of variable data from one node to another, connected in a network, takes place at this layer 
 - Each node has a specific address and the network layer ensures that the data is sent to its destination address
@@ -62,7 +63,7 @@ network architecture are:
 ---
 
 #### 4) Transport Layer
----
+
 - The delivery of data packets is managed by the transport layer
 - It manages the flow of data, segmentation and desegmentation and error control
 - There are five classes of the transport protocol, starting from 0 and continuing till 4 (TP0 to TP4)
@@ -70,7 +71,7 @@ network architecture are:
 ---
 
 #### 5) Session Layer
----
+
 - The connection between the computers connected in a network is managed at this layer
 - Establishment, management and termination between the remote and local application takes place here
 - Authentication and authorisation happen at this layer
@@ -78,7 +79,7 @@ network architecture are:
 ---
 
 #### 6) Presentation Layer
----
+
 - The data is converted into the syntax or semantics which an application understands
 - Before passing on the data any further, the data is formatted at this stage
  -Functions including compression, encryption, compatible character code set, etc. are also done at this layer of the model
@@ -86,7 +87,7 @@ network architecture are:
 ---
 
 #### 7) Application Layer
----
+
 - The interaction with the user or the user application takes place at this stage
 - When identifying communication partners, the application layer determines the identity and availability of communication partners for an application with data to transmit
 ---
