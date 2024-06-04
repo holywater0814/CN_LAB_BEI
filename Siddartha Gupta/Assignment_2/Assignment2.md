@@ -96,26 +96,26 @@ network architecture are:
 
 The OSI (Open Systems Interconnection) model is a conceptual framework used to understand and implement standard communication protocols in computer networks. It is divided into seven layers, each with specific functions. The principles behind the OSI model include:
 
-####    Layered Architecture:
-        - The model is divided into seven distinct layers, each responsible for different aspects of communication. This division allows for easier troubleshooting and development.
+#### Layered Architecture:
+- The model is divided into seven distinct layers, each responsible for different aspects of communication. This division allows for easier troubleshooting and development.
 
-####    Separation of Concerns:
-        - Each layer performs a specific function and interacts with the layers directly above and below it. This modular approach ensures that changes in one layer do not affect others.
+#### Separation of Concerns:
+- Each layer performs a specific function and interacts with the layers directly above and below it. This modular approach ensures that changes in one layer do not affect others.
 
-####   Standardization:
-        - By defining standard interfaces and protocols for each layer, the OSI model facilitates interoperability between different hardware and software systems.
+#### Standardization:
+- By defining standard interfaces and protocols for each layer, the OSI model facilitates interoperability between different hardware and software systems.
 
-####    Abstraction:
-        - The OSI model abstracts the complex process of data communication into manageable pieces, allowing for clearer understanding and implementation.
+#### Abstraction:
+- The OSI model abstracts the complex process of data communication into manageable pieces, allowing for clearer understanding and implementation.
 
-####    Interoperability:
-        - The model promotes the ability of different systems and organizations to work together by adhering to the same set of protocols and standards.
+#### Interoperability:
+- The model promotes the ability of different systems and organizations to work together by adhering to the same set of protocols and standards.
 
-####    Encapsulation:
-        - Data encapsulation occurs as information passes down the layers, with each layer adding its own header (and sometimes trailer) to the data. This ensures that each layer has the information needed to process the data correctly.
+#### Encapsulation:
+- Data encapsulation occurs as information passes down the layers, with each layer adding its own header (and sometimes trailer) to the data. This ensures that each layer has the information needed to process the data correctly.
 
-####    Layer Independence:
-        - Each layer is designed to be independent, meaning changes or updates in one layer do not require changes in other layers. This separation simplifies development and enhances flexibility.
+#### Layer Independence:
+- Each layer is designed to be independent, meaning changes or updates in one layer do not require changes in other layers. This separation simplifies development and enhances flexibility.
 
 
 
