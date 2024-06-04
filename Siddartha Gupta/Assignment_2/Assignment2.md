@@ -34,60 +34,62 @@ network architecture are:
 7 Layers of the OSI Model are mentioned below:
 
 #### 1) Physical layer
-
-        - It is the bottom-most or the first layer of the OSI Model
-        - It comprises the raw data which is further transmitted to the higher layers of the structure
-        - Preparing the physical devices in the network and accepting the received data for transmission
-        - The termination of connection between two nodes of a network also takes place at this stage
-        - This layer converts the digital bits into electrical, radio, or optical signals
-
+---
+- It is the bottom-most or the first layer of the OSI Model
+- It comprises the raw data which is further transmitted to the higher layers of the structure
+- Preparing the physical devices in the network and accepting the received data for transmission
+- The termination of connection between two nodes of a network also takes place at this stage
+- This layer converts the digital bits into electrical, radio, or optical signals
+---
 
 #### 2) Data Link Layer
-```
+---
 - Access to get the data is achieved at this layer
 - It breaks the input data into frames which makes analysing the data easier
 - Ensures that the data received is free of any errors
 -  It controls the flow of data in the stipulated time duration and along with a set speed of transmission
 - The data is sent to the next layer in the form of packets which are then reviewed for further processing
-```
+
+---
 
 #### 3) Network Layer
-```
+
+---
 - It acts as a network controller
 - Transferring of variable data from one node to another, connected in a network, takes place at this layer 
 - Each node has a specific address and the network layer ensures that the data is sent to its destination address
 - The data is sent in the form of fragments which are then connected to each other once the processing is done
-```
+---
 
 #### 4) Transport Layer
-```
+---
 - The delivery of data packets is managed by the transport layer
 - It manages the flow of data, segmentation and desegmentation and error control
 - There are five classes of the transport protocol, starting from 0 and continuing till 4 (TP0 to TP4)
 - Fragmentation and reassembly of data packets occur that this stag
-```
+---
 
 #### 5) Session Layer
-```
+---
 - The connection between the computers connected in a network is managed at this layer
 - Establishment, management and termination between the remote and local application takes place here
 - Authentication and authorisation happen at this layer
 - This layer can also terminate or end any session or transmission which is complete
-```
+---
 
 #### 6) Presentation Layer
-```
+---
 - The data is converted into the syntax or semantics which an application understands
 - Before passing on the data any further, the data is formatted at this stage
  -Functions including compression, encryption, compatible character code set, etc. are also done at this layer of the model
 - It serves as a data translator for the network
-```
+---
 
 #### 7) Application Layer
-```
+---
 - The interaction with the user or the user application takes place at this stage
 - When identifying communication partners, the application layer determines the identity and availability of communication partners for an application with data to transmit
-```
+---
 
 # What are the principles behind the OSI model ?
 
