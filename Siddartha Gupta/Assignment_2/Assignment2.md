@@ -34,13 +34,13 @@ network architecture are:
 7 Layers of the OSI Model are mentioned below:
 
 #### 1) Physical layer
-```
+~~~
 - It is the bottom-most or the first layer of the OSI Model
 - It comprises the raw data which is further transmitted to the higher layers of the structure
 - Preparing the physical devices in the network and accepting the received data for transmission
 - The termination of connection between two nodes of a network also takes place at this stage
 - This layer converts the digital bits into electrical, radio, or optical signals
-```
+~~~
 
 #### 2) Data Link Layer
 ```
