@@ -1,0 +1,30 @@
+Q)  What is the value of each of the header fields ? Explain why the value is what it is .
+
+--> a. Version(4 bits) ,  value =4. The value 4 means that the ipversion is 4 i.e. IPv4.
+--> b. Header Length <IHL> (4 bits) , value =5 . Indicates the number of 32-bit words in the header.
+       5 means the header is 20 bytes long (5 * 4 bytes).
+--> c. DSCP (6 bits) ,Value= 0x80 .  Value 0x80  indicates  a DSCP value corresponds to a DSCP value of 32,
+       which is associated with the Expedited Forwarding (EF) Per-Hop Behavior. 
+--> d. ECN (2 bits) , Value =00 , This value indicates that the packet is not using ECN.
+       It is not ECN-capable, and any network devices should not set or interpret ECN-related bits 
+	   for this packet.
+--> e. Total Length (2 bytes) , Value =1228 , This value indicates that the entire packet, including the header
+       and data is 1228 bytes long .
+--> f. Identification (2 bytes), Value =0x0000, This value indicates that the identification value of the 
+       packet is 0 . 
+--> g. Flags (3 bits) , Value=0x2, Don't fragment. The value 0x2 identifies as Don't fragment.
+--> h. Fragment Offset( 13 bits) , Value = 0, Indicates where in the datagram this fragment belongs , 0 means 
+       not fragmented. 
+--> i. TTL <Time to live> (1 byte) , Value=58 , Indicates it can pass through 58 routers before getting 
+       discarded.  MacOS or GNU/Linux often use a default TTL of 64 which means packet has already passed 
+	   through 6 routers in my case. 
+--> j. Protocal (1 byte) , Value : UDP( 17) , It means User Datagram Protocal (UDP) is being used in the data 
+       portion of the IP packet. 
+--> k. Header Checksum (2 bytes) , value : 0x27b1, It indicates whether the sent packets and recieved packets 
+       are same or not , if not same then some data is lost.
+--> l. Source Address (4 bytes) , value: 142.250.195.3 , It indiates the ip address of the sender which means
+       the packets is sent from the above ip address.(which is the ip address of Google LLC ) and location 
+	   is showing Delhi , India. 
+--> m. Destination Address (4 bytes), value: 192.168.1.74, It indicates the ip address of the receiver which 
+       means our ip address is 192.168.1.74.
+
