@@ -1,19 +1,7 @@
 Q)  What is the value of each of the header fields ? Explain why the value is what it is .
 
 
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  
- |Version|  IHL  |Type of Service|          Total Length         |  
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  
- |         Identification        |Flags|      Fragment Offset    |  
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  
- |  Time to Live |    Protocol   |         Header Checksum       |  
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  
- |                       Source Address                          |  
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  
- |                    Destination Address                        |  
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  
- |                    Options                    |    Padding    |  
- +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  
+![img](struct.png)
 ---
 
 --> a. Version(4 bits) ,  value =4. The value 4 means that the ipversion is 4 i.e. IPv4.
