@@ -14,7 +14,34 @@ Headers and their values :
 	congestion is requested. 
 
  3) Flow label (20 bits): 
-    Has the value 0x00500 which has the meaning 
+    Has the value 0x00500 ,this value can be used by the source to indicate that the packets with this flow
+	label belong to the same flow, allowing routers and switches in the network to identify and possibly
+	provide special handling for this flow. The exact handling depends on the policies and capabilities of
+	the network devices. 
+
+ 4) Payload Length (16 bits): 
+    Has the value 0x0047 , it indicates that the payload of the IPv6 packet, which includes any extension
+	headers and the transport layer data, is 71 bytes long.
+	Hence the size of the whole packet would be: 40 + 71 =111 bytes since 40 bytes ipv6 header is fixed.
+	We can confirm that by clicking on the each layer from Network layer to Application layer i.e 
+	Network,Trasport and Application layer. Network layer is of 40 bytes, Transport layer is of 32 and 
+	Application layer is of 39 bytes(TLS in this case ). 
+
+ 5) Next header(8 bits):
+    Has the value 0x06 , it indicates that the next header is a TCP header . It can have different value such 
+	as 0x11 for UDP header, 0x3A for ICMPv6 etc. 
+
+ 6) Hop limit(8 bits): 
+    Has the value 0x40 , it means  packet is allowed to be forwarded by up to 64 routers. Each time a router
+	forwards the packet, it decreases the Hop Limit by one.When the Hop Limit reaches zero, the packet is
+	discarded to prevent it from looping indefinitely in the network.
+ 
+ 7) Source Address (128 bits):
+    Has the value 2400:1a00:b1e0:3f34:58d6:43c8:8876:d8f7, which means the packet is coming from that address. 
+
+ 8) Destination Address(128 bits): 
+    Has the value 2404:6800:4002:826::200a, which means the packet is coming into this address. 
+
 
     
 
