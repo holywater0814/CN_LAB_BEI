@@ -1,0 +1,25 @@
+# This is the solution of the question no.2 of the task.md of the Assignment_06 . 
+
+# The answer in this particular file solution2.txt based on the packet with Frame:45 of file ipv6.pcapng and
+  the screenshot is also given as ipv6ss.png. 
+
+Headers and their values : 
+ 1) Version (4 bits) : 
+    Has the value 0x6 which can also be seen as 6 on the first 4 byte of highlighted text down , which has the 
+	meaning that we are using the ipv6. 
+ 
+ 2) Traffic Class (6+2 bits) :
+    Has the value 0x00 which has the meaning that the package is of normal type and no special Quality of 
+	Service is requested , which is given by first 6 bits and last 2 bits gives that no explicit 
+	congestion is requested. 
+
+ 3) Flow label (20 bits): 
+    Has the value 0x00500 which has the meaning 
+
+    
+
+
+
+
+
+

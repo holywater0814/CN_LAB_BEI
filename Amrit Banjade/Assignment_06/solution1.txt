@@ -1,59 +1,60 @@
 1) --> IPv6 header is of 40bytes long. The header fields includes : 
-       Version(4bits)
-	   Traffic Class (8 bits)
-	   Flow label (20 bits)
-	   Payload length(16 bits)
-	   Next header(8 bits)
-	   Hop limit(8 bits)
-	   Source address (128 bits)
-	   Destination address (128 bits)
+	Version(4bits)
+	Traffic Class (8 bits)
+	Flow label (20 bits)
+	Payload length(16 bits)
+	Next header(8 bits)
+	Hop limit(8 bits)
+	Source address (128 bits)
+    Destination address (128 bits)
 
 
-	   Purpose of each header fields of ipv6 header. 
-	   a) Version(4 bits) 
-	      This header field shows which version of internet protocal we are using. It can have two values 
-		  0100 or 0110 , i.e ipv4 or ipv6. 
+	Purpose of each header fields of ipv6 header. 
 
-	   b) Traffic Class (6+2 bits)
-	      The bits of this field holds two values.First 6 MSB hold the differentiatied services field(DS field)
-		  , which is used to classify packets. All standard DS fields end with '0'. 
-		  The remaining two bits used for ECN (Explicit Congestion Notification) which is divided into ranges
-		  where the source provides congestion control and non congestion control traffic. 
+a) Version(4 bits) 
+	This header field shows which version of internet protocal we are using. It can have two values 
+	0100 or 0110 , i.e ipv4 or ipv6. 
 
-       c) Flow label(20 bits) 
-	      The Flow Label field  is designed to facilitate the efficient routing and handling of packets 
-		  belonging to the same flow. A "flow" is a sequence of packets sent from a particular source to a
-		  particular (unicast or multicast) destination for which the source desires special handling by the
-		  intervening routers. This special handling can include things like prioritized delivery, bandwidth 
-		  guarantees, and low-latency transmission, which are essential for real-time applications such as
-		  voice over IP (VoIP), online gaming, and video conferencing
-	      
-	   d) Payload length(16 bits) 
-	      The Payload Length field specifies the length of the payload carried by the IPv6 packet which 
-		  includes: the data portion of the packet and any extension headers that follow the basic ipv6 
-		  header.
+b) Traffic Class (6+2 bits)
+        The bits of this field holds two values.First 6 MSB hold the differentiatied services field(DS field)
+	, which is used to classify packets. All standard DS fields end with '0'. 
+	The remaining two bits used for ECN (Explicit Congestion Notification) which is divided into ranges
+	where the source provides congestion control and non congestion control traffic. 
 
-	   e) Next header(8 bits) 
-	      This header field specifies the type of the next header.  This field usually specifies the transport
-		  layer protocol used by a packet's payload ( can also  be udp) . When extension headers are present in
-		  the packet this field indicates which extension header follows.
-        
-	   f) Hop limit (8 bits) 
-	      This header fields specifies how many routers can this packet traverse maximum. Everytime a packet 
-		  is traversed into a router, value is decremented by 1.This is useful very much to stop the packet 
-		  from looping. 
+c) Flow label(20 bits) 
+	The Flow Label field  is designed to facilitate the efficient routing and handling of packets 
+	belonging to the same flow. A "flow" is a sequence of packets sent from a particular source to a
+	particular (unicast or multicast) destination for which the source desires special handling by the
+	intervening routers. This special handling can include things like prioritized delivery, bandwidth 
+	guarantees, and low-latency transmission, which are essential for real-time applications such as
+	voice over IP (VoIP), online gaming, and video conferencing
 
-	   g) Source Address (128 bits) 
-	      This header fields specifies the address from which the packet is sent. 
+d) Payload length(16 bits) 
+	The Payload Length field specifies the length of the payload carried by the IPv6 packet which 
+	includes: the data portion of the packet and any extension headers that follow the basic ipv6 
+	header.
 
-	   h) Destination Address (128 bits) 
-	      This header fields specifies the address to which the packet is to be sent. 
+e) Next header(8 bits) 
+	This header field specifies the type of the next header.  This field usually specifies the transport
+	layer protocol used by a packet's payload ( can also  be udp) . When extension headers are present in
+	the packet this field indicates which extension header follows.
+
+f) Hop limit (8 bits) 
+	This header fields specifies how many routers can this packet traverse maximum. Everytime a packet 
+	is traversed into a router, value is decremented by 1.This is useful very much to stop the packet 
+	from looping. 
+
+g) Source Address (128 bits) 
+	This header fields specifies the address from which the packet is sent. 
+
+h) Destination Address (128 bits) 
+	This header fields specifies the address to which the packet is to be sent. 
 
 
 
-	
-Ref: https://en.wikipedia.org/wiki/IPv6_packet#Fixed_header
-   : chatgpt
-   : google search
+
+	Ref: https://en.wikipedia.org/wiki/IPv6_packet#Fixed_header
+	: chatgpt
+	: google search
 
 
