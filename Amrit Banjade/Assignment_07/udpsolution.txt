@@ -1,0 +1,31 @@
+# The following report is made based on the packet captured on wireshark and the screenshot of that 
+  particular packet is in the current directory along with the updframe96.pcapng file.If we click on the 
+  frame number 96 of that file it's the same as the screenshot. 
+
+
+We know UDP header contains 4 fields. The value of each field and their meaning is given below. 
+
+1) Source Port Number : 
+                        Value = 0xf811 or (63505 in decimal) 
+                        It means that that the data was sent from a source port within the dynamic
+						range, likely for a temporary or client-side application because it lies in 
+						the range of 49152-65535 which are dynamic or private ports. 
+
+2) Destination Port Number :
+                        Value = 0x01bb or (443 in decimal) 
+					    A destination port number of 443 usually indicates that the packet is intended for
+					    a service that uses secure communication, and in the context of UDP, it might be
+						used for modern protocols that require secure and efficient data transport.
+                         
+3) Length: 
+          Value= 0x0029 or(41 in decimal) 
+          The value 41 means that total size of packet including is 41 and subtracting the header size we get 
+		  33 which is the size of actual data. The value 33 can be seen on the screenshot as the UDP payload . 
+
+4) Checksum: 
+            Value= 0xd398
+			It is the value which is used to check if the data is changed or not. 
+
+
+
+
