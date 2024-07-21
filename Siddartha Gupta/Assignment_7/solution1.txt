@@ -1,0 +1,35 @@
+Q) What is the size of the UDP header ? What are the different fields? Describe its fields.
+
+
+  The UDP header is of 8 bytes. 
+  There are 4 different fields each of the fields is of 2 bytes. 
+  Different fields of UDP header : 
+
+  a) Source Port Number 
+     This field identifies the sender's port, when used, and should be assumed to be the port to reply to 
+	 if needed. If not used, it should be zero. If the source host is the client, the port number is likely
+	 to be an ephemeral port. If the source port host is a server , the port number is likely to be a well-
+	 known port number from 0 to 1023. 
+
+  b) Destination Port Number 
+     This field identifies the receiver's port and is required milar to source port number, if the client is
+	 the destination host then the port number will likely be an ephemeral port number and if the destination
+	 host is the server then the port number will likely be a well-known port number.
+
+  c) Length 
+     This field specifies the length in bytes of the UDP header and UDP data.The minimum length is 8 bytes, 
+	 the length of the header.The field size sets a theoretical limit of 65,535 bytes (8-byte header +
+	 65,527 bytes of data) for a UDP datagram.However, the actual limit for the data length, which is imposed
+	 by the underlying IPv4 protocol, is 65,507 bytes (65,535 bytes − 8-byte UDP header − 20-byte IP header).
+    
+  d) Checksum 
+     The checksum field may be used for error-checking of the header and data. This field is optional in IPv4,
+	 and mandatory in most cases in IPv6. The field carries all-zeros if unused.It provides a way to detect
+	 errors in the header and payload.
+
+
+
+Ref: https://en.wikipedia.org/wiki/User_Datagram_Protocol
+   : chatgpt
+
+	 

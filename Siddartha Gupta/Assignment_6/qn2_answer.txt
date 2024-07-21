@@ -1,0 +1,40 @@
+#different header value and why is that.........??
+
+
+ 1) Version (4 bits) : 
+    Has the value 0x6 which can also be seen as 6 on the first 4 byte of highlighted text down , which has the 
+	meaning that we are using the ipv6. 
+
+ 2) Traffic Class (8 bits) :
+    Has the value 0x00 which has the meaning that the package is of normal type and no special Quality of 
+	Service is requested , which is given by first 6 bits and last 2 bits gives that no explicit 
+	congestion is requested.
+
+ 3) Flow label (20 bits): 
+    The value 0x00000 suggests that the source node does not require any special handling for these packets. 
+    It means the packets should be treated with the default processing by routers and switches.Setting the Flow
+    Label to 0x00000 indicates that the packet is not part of any special flow and should be treated using default 
+    forwarding and handling rules by routers and other network devices. This is the standard setting for most general
+     internet traffic where no special requirements are specified.
+
+ 4) Payload Length (16 bits): 
+    It has the value of 0x0020, indicate that the Payload Length field is set to 32, which means the packet’s payload
+    (the data part of the packet after the IPv6 header) is 32 bytes long. This does not include the IPv6 header itself, 
+    which is 40 bytes, so the total size of the packet is 72 bytes (40 bytes of header + 32 bytes of payload).
+
+ 5) Next header(8 bits):
+    It has the value 0x3a, which indicates that the header following the IPv6 header is an ICMPv6 header. It can have different value such 
+	as 0x11 for UDP header, 0x06 for TCP etc. 
+
+ 6) Hop limit(8 bits): 
+    Hop Limit field in an IPv6 header is set to 0xFF (or 255 in decimal), it indicates that the packet can 
+    traverse up to 255 hops before being discarded by a router.
+
+ 7) Source Address (128 bits):
+    Has the value fe80:0000:0000:0000:0000:0000:0000:0001, which means the packet is coming from that address. 
+ 
+ 8) Destination Address (128 bits):
+    Has the value fe80:0000:766c:206b:4aa4:4bb8, which means the packet is coming into this address. 
+
+
+
