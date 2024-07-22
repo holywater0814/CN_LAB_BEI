@@ -1,0 +1,26 @@
+GET /static/styles/mainpage.css HTTP/1.1
+Host: 127.0.0.1:5000
+Connection: keep-alive
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+If-None-Match: "1720437913.495326-2439-1303844161"
+If-Modified-Since: Mon, 08 Jul 2024 11:25:13 GMT
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Linux"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://127.0.0.1:5000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+HTTP/1.1 304 NOT MODIFIED
+Server: Werkzeug/3.0.3 Python/3.10.12
+Date: Sun, 21 Jul 2024 13:01:13 GMT
+Content-Disposition: inline; filename=mainpage.css
+Cache-Control: no-cache
+ETag: "1720437913.495326-2439-1303844161"
+Date: Sun, 21 Jul 2024 13:01:13 GMT
+Connection: close
+
