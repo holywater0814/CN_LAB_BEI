@@ -24,11 +24,11 @@
 
 The first three frame shown in the picture above is the packets of TCP connection
 
-1) **[SYN] Seq=0**,The client initiates the connection with a SYN packet and sets the initial sequence number (ISN) to 0. The SYN packet itself consumes 1 sequence number.
+1) `**[SYN] Seq=0**`,The client initiates the connection with a SYN packet and sets the initial sequence number (ISN) to 0. The SYN packet itself consumes 1 sequence number.
 
-2) **[SYN, ACK] Seq=0 Ack=1**, The server responds with a SYN-ACK packet. The server's sequence number is set to 0 (its ISN), and it acknowledges the client's SYN by setting the acknowledgment number to 1 (Ack=1). This is because the SYN packet from the client consumed 1 sequence number.
+2) `**[SYN, ACK] Seq=0 Ack=1**`, The server responds with a SYN-ACK packet. The server's sequence number is set to 0 (its ISN), and it acknowledges the client's SYN by setting the acknowledgment number to 1 (Ack=1). This is because the SYN packet from the client consumed 1 sequence number.
 
-3) **[ACK] Seq=1 Ack=1**, The client acknowledges the server's SYN-ACK by sending an ACK packet. The client's sequence number is incremented to 1 (Seq=1) to acknowledge the receipt of the server's SYN. The acknowledgment number is set to 1 (Ack=1) because it acknowledges the server's SYN, which consumed 1 sequence number.
+3) `**[ACK] Seq=1 Ack=1**`, The client acknowledges the server's SYN-ACK by sending an ACK packet. The client's sequence number is incremented to 1 (Seq=1) to acknowledge the receipt of the server's SYN. The acknowledgment number is set to 1 (Ack=1) because it acknowledges the server's SYN, which consumed 1 sequence number.
 
 ---
 
