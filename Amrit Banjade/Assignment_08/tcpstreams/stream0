@@ -1,0 +1,43 @@
+GET / HTTP/1.1
+Host: 127.0.0.1:5000
+Sec-Fetch-Site: none
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Mode: navigate
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15
+Accept-Language: en-GB,en;q=0.9
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.3 Python/3.12.4
+Date: Mon, 22 Jul 2024 02:48:38 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 755
+Connection: close
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5">Upload a File</h1>
+      
+        
+      
+      <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="file">Choose file</label>
+          <input type="file" class="form-control-file" id="file" name="file">
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+      </form>
+    </div>
+  </body>
+</html>

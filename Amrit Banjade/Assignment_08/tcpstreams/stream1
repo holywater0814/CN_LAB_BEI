@@ -1,0 +1,24 @@
+GET /favicon.ico HTTP/1.1
+Host: 127.0.0.1:5000
+Sec-Fetch-Site: same-origin
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Sec-Fetch-Mode: no-cors
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15
+Referer: http://127.0.0.1:5000/
+Sec-Fetch-Dest: image
+Accept-Language: en-GB,en;q=0.9
+
+HTTP/1.1 404 NOT FOUND
+Server: Werkzeug/3.0.3 Python/3.12.4
+Date: Mon, 22 Jul 2024 02:48:38 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 207
+Connection: close
+
+<!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>

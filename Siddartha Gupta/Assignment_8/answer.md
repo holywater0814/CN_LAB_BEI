@@ -1,4 +1,4 @@
-# Connection, Maintenance and Termination
+# Connection, Maintenance and Termination of TCP 
 
 
 <img src="images/Screenshot from 2024-07-22 18-21-27.png">
