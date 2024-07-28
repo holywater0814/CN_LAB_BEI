@@ -1,3 +1,6 @@
+# The following report is made based on the frame number 32 of the captured packet. 
+
+
 Q)  What is the value of each of the header fields ? Explain why the value is what it is .
 
 --> a. Version(4 bits) ,  value =4. The value 4 means that the ipversion is 4 i.e. IPv4.
