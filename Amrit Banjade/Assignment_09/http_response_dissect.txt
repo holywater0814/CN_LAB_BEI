@@ -1,0 +1,41 @@
+HTTP Response Disection
+
+
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Sun, 28 Jul 2024 10:02:39 GMT
+Content-Type: text/html
+Last-Modified: Wed, 22 Mar 2023 14:54:48 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+ETag: W/"641b16b8-1404"
+Referrer-Policy: strict-origin-when-cross-origin
+X-Content-Type-Options: nosniff
+Feature-Policy: accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
+Content-Security-Policy: default-src 'self'; script-src cdnjs.cloudflare.com 'self'; style-src cdnjs.cloudflare.com 'self' fonts.googleapis.com 'unsafe-inline'; font-src fonts.googleapis.com fonts.gstatic.com cdnjs.cloudflare.com; frame-ancestors 'none'; report-uri https://scotthelme.report-uri.com/r/d/csp/enforce
+Content-Encoding: gzip
+
+
+
+An HTTP Response consists of a status line , headers, and optionally body . 
+
+Status Line
+ HTTP Version: HTTP/1.1
+ Status Code: 200 — OK, indicating that the request was successful.
+ Status Message: OK
+
+Headers
+ Server: nginx/1.18.0 (Ubuntu) — Specifies the server software and version
+ Date: Sun, 28 Jul 2024 10:02:39 GMT — The date and time at which the response was generated.
+ Content-Type: text/html — The media type of the response body. Here, it is HTML.
+ Last-Modified: Wed, 22 Mar 2023 14:54:48 GMT — The last modification date of the resource.
+ Transfer-Encoding: chunked — The body is encoded in chunks, allowing for the transfer of data in pieces.
+ Connection: keep-alive — Indicates that the connection should be kept open.
+ ETag: W/"641b16b8-1404" — A unique identifier for the version of the resource.
+ Referrer-Policy: strict-origin-when-cross-origin — Controls how much referrer information should be
+                                                    included with requests.
+ X-Content-Type-Options: nosniff — Prevents the browser from interpreting files as a different MIME type.
+ Feature-Policy: Specifies features that are either allowed or denied. Here, various features such as
+                 accelerometer, camera, and microphone are disabled.
+Content-Security-Policy: Defines the allowed sources for different types of content.
+Content-Encoding: gzip — The body is compressed using gzip.
