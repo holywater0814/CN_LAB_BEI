@@ -1,11 +1,11 @@
 ### What Happens When You Type google.com in Your Browser and Press Enter?
 
-When you type `google.com` in your browser and press Enter, a series of complex interactions take place behind the scenes, involving multiple layers of the OSI model. Here’s a detailed explanation of what happens, layer by layer:
+When you type google.com in your browser and press Enter, a series of complex interactions take place behind the scenes, involving multiple layers of the OSI model. Here’s a detailed explanation of what happens, layer by layer:
 
 #### 1. **Application Layer (Layer 7)**
-   - **User Action:** You enter `google.com` into the browser's address bar and press Enter.
+   - **User Action:** You enter google.com into the browser's address bar and press Enter.
    - **Browser Function:** The browser checks its cache to see if it has a recent copy of the page. If not, it proceeds to make a request to retrieve the page.
-   - **DNS Request:** The browser needs to translate the human-readable domain name `google.com` into an IP address. This process is known as DNS (Domain Name System) resolution. The browser sends a DNS query to the DNS server to get the IP address of `google.com`.
+   - **DNS Request:** The browser needs to translate the human-readable domain name google.com into an IP address. This process is known as DNS (Domain Name System) resolution. The browser sends a DNS query to the DNS server to get the IP address of google.com.
 
 #### 2. **Presentation Layer (Layer 6)**
    - **Data Translation:** The URL is encoded into a standardized format. Any necessary encryption (e.g., HTTPS) is handled here, ensuring that the data transmitted is secure.
