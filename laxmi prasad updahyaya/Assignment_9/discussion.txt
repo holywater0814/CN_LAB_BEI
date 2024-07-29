@@ -1,0 +1,10 @@
+Discuss the request and response.
+
+
+First three http header are used to establish the connection between client and server.
+
+GET /index.html HTTP/1.1
+This is the line where the http is acessed with version 1.1.
+
+Now, two hosts response each others request generated as per user or requirement.
+This process is continue till connection termination.

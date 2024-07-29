@@ -1,0 +1,60 @@
+GET /static/styles/ulpd.css HTTP/1.1
+Host: localhost:5000
+Connection: keep-alive
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+sec-ch-ua-platform: "Linux"
+Accept: text/css,*/*;q=0.1
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Referer: http://localhost:5000/uploader
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.3 Python/3.10.12
+Date: Sun, 28 Jul 2024 21:31:06 GMT
+Content-Disposition: inline; filename=ulpd.css
+Content-Type: text/css; charset=utf-8
+Content-Length: 604
+Last-Modified: Sun, 28 Jul 2024 18:17:09 GMT
+Cache-Control: no-cache
+ETag: "1722190629.3696241-604-93267147"
+Date: Sun, 28 Jul 2024 21:31:06 GMT
+Connection: close
+
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #6990F2;
+}
+body div{
+    background-color: white;
+    padding: 2em;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+h1{
+    color: #6990F2;
+
+}
+i{
+    color: #6990F2;
+    transform: scale(4);
+    margin: 4rem;
+  }
