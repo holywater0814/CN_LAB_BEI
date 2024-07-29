@@ -17,6 +17,9 @@
     
 <h1> 3. Run code </h1>
      Make sure you have flask insalled on your virtual enviroment. 
+     python3 app.py 
 
+<h2>  Now go the the url printed on the terminal . </h2>
 
+<br>
 To exit from virtual enviroment use deactivate on the terminal . 
