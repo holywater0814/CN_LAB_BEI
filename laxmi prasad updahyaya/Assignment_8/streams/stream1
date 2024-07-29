@@ -1,0 +1,57 @@
+POST /uploader HTTP/1.1
+Host: localhost:5000
+Connection: keep-alive
+Content-Length: 468
+Cache-Control: max-age=0
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+Upgrade-Insecure-Requests: 1
+Origin: http://127.0.0.1:5000
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryv20EohmPE45sorXo
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://127.0.0.1:5000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+
+------WebKitFormBoundaryv20EohmPE45sorXo
+Content-Disposition: form-data; name="file"; filename="task.md"
+Content-Type: text/markdown
+
+1) IN the programming language of your choice write a web application that allows you to upload a file. 
+2) Capture a traffic in wireshark while uploading a file. Follow the TCP stream and explain conncection 
+   initialization , connection maintainance and conncection termination. 
+
+------WebKitFormBoundaryv20EohmPE45sorXo--
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.3 Python/3.10.12
+Date: Sun, 28 Jul 2024 21:31:06 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 534
+Connection: close
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel= "stylesheet" type= "text/css" href= "/static/styles/ulpd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1>
+            File Upload Sucessfully
+        </h1>
+        <i class="fas fa-check-circle"></i>
+
+    </div>  
+</body>
+</html>
