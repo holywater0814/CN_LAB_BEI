@@ -1,0 +1,82 @@
+The TCP header size varies from 20 bytes to 60 bytes because of the options field. 
+	There are 10 mandatory fields and 2 optional fields on TCP header. 
+	They are : 
+	
+  a) Source port(16 bits) 
+     It is a mandatory field which contains the port number of the sending application.Value ranges from 
+	 0 to 65535 ( 2^16 -1) . 
+
+  b) Destination port (16 bits) 
+     It is a mandatory field which contains the port number of the receiving application. Value ranges from 
+	 0 to 65535 . 
+	
+  c) Sequence Number (32 bits) 
+     It is a mandatory field. It has dual role. 
+	  * If the SYN flag is set(1), then this is the initial sequence number. The sequence number of the actual
+	    first data byte and the acknowledged number in the corresponding ACK are then this sequence number
+	    plus 1.
+      * If the SYN flag is unset(0), then this is the accumulated sequence number of the first data byte of 
+	    this segment for the current session. 
+
+  d) Acknowledgment number (32 bits)
+     It is a mandatory field. If the ACK flag is set then the value of this field is the next sequence number
+	 that the sender of the ACK is expecting. This acknowledges receipt of all prior bytes (if any).The
+	 first ACK sent by each end acknowledges the other end's initial sequence number itself, but no data.
+
+  e) Data offset (4 bits) 
+     It is a mandatory field.The Data Offset field indicates the size of the TCP header in 32-bit words
+	 (also known as double words or 4-byte words). This value tells the receiver where the header ends and
+	 where the actual data payload begins.
+	 Since the field is 4 bits in size, it can represent values from 0 to 15. However, the minimum valid value
+	 for the Data Offset field is 5, which corresponds to a 20-byte header (5 x 4 bytes).
+
+  f) Reserved (4 bits) 
+     It is a mandatory field. The Reserved field in the TCP header consists of 4 bits.These bits are reserved
+	 for future use to accommodate potential extensions or modifications to the TCP protocol.As of the current
+	 TCP specification, these bits must be set to zero and are ignored by the receiver.
+
+  g) Flags (8 bits) 
+     It is also mandatory field. It contains 8 1-bit flags. These are as follows: 
+	   1) CWR: (Congestion window reduced) flag is set by the sending host to indicate that it received a
+	           TCP segment with the ECE flag set and had responded in congestion control mechanism.
+       2) ECE: ECN-Echo has a dual role, depending on the value of the SYN flag. It indicates:
+	           If the SYN flag is set (1), the TCP peer is ECN capable.
+			   If the SYN flag is unset (0), a packet with the Congestion Experienced flag set (ECN=11)
+			   in its IP header was received during normal transmission.This serves as an indication of network
+			   congestion (or impending congestion) to the TCP sender.
+	   3) URG: Indicates that the Urgent pointer field is significant
+	   4) ACK: Indicates that the Acknowledgment field is significant.All packets after the initial SYN packet
+	           sent by the client should have this flag set.
+       5) PSH: Push function. Asks to push the buffered data to the receiving application.
+	   6) RST: Reset the connection
+	   7) SYN: Synchronize sequence numbers. Only the first packet sent from each end should have this flag
+	           set. Some other flags and fields change meaning based on this flag, and some are only valid
+			   when it is set, and others when it is clear.
+	   8) FIN: Last packet from the sender.
+
+    h) Window size (16 bits) 
+	   It is also mandatory field. The Window Size field is used to manage the flow of data between the sender
+	   and receiver. It tells the sender how much more data can be sent before needing an acknowledgment.
+       This mechanism helps prevent buffer overflow at the receiver's end and ensures that the receiver is not 
+	   overwhelmed by too much data at once.
+
+	i) Checksum (16 bits)
+	   It is also mandatory field. The Checksum field is used to detect errors in the TCP segment's header and
+	   data.It helps ensure that the data has not been corrupted during transmission from the sender to the
+	   receiver.
+
+    j) Urgent pointer (16 bits)
+	   It is also mandatory field. The Urgent Pointer field is used in conjunction with the URG (Urgent) flag
+	   to signal that certain data in the TCP segment is urgent and should be processed immediately by the
+	   receiving application.The pointer specifies the offset from the sequence number where the urgent data
+	   ends.
+
+    k) Options (Variable 0–320 bits, in units of 32 bits)
+	   It is an optional field. he length of this field is determined by the data offset field. Options have up
+	   to three fields: Option-Kind (1 byte), Option-Length (1 byte), Option-Data (variable). The Option-Kind
+	   field indicates the type of option.
+
+	l) Padding 
+	   The TCP header padding is used to ensure that the TCP header ends, and data begins, on a 32-bit boundary
+	   . The padding is composed of zeros.
+

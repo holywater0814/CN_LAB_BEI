@@ -1,0 +1,20 @@
+# The following report is made based on the frame number 32 of the captured packet. 
+
+
+Q)  What is the value of each of the header fields ? Explain why the value is what it is .
+
+the captured packet of 20 byte is given
+45   00    34  d1  e6  40  00  40  06  aa  71          c0  a8  01 57         8c  52  70  1a  
+
+1) ip version : the first 4 bit represent version which is 4.therefore the ip is ip version 4
+2) header length : second 4 bit in first byte is 5 which represent the number of byte * 5 . therefore there are twenty byte in the header
+3) types of service : the second byte represent types of service used which is 00. so there is no specific service enabled.
+4)total length : next 16 bit represent the number of byte in header which is 34d1 which is equivalent to which is 13521.
+5) identification : identification bytes in above ip header are e6 40.
+6) ip flags : the first 3 bit after identification are used for ip flag  which are 000.
+7)fragment offset : the remaining 13 bit afer that are use for fragment offset which are ( 0 0000 0100 0000 ) in above ip.
+8)time to leave : another bit is used for time to leave which is 06 .
+9) protocal: protocal field define which protocal is used in this ip header which is 06 . this is for TCP and for udp the value is 17.
+10)header checksum : the 16 bits after protocal field represent the header checksum .
+11)source ip: it define the source address which is c0 a8 01 57 in above packet.
+12)destination ip : it define the destination whichis 8c 52 70 1a in above packet.

@@ -2,3 +2,5 @@ ip address: 192.168.1.87
 subnet mask: 255.255.255.0
 network address : 192.168.1.0
 broadcast address:192.168.1.87
+device support : 253
+
