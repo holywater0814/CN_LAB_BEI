@@ -1,0 +1,52 @@
+01 bb ae 40 ab 8c 21 df 0b e5 23 3a 80 10 00 49 a5 24 00 00 01 01 08 0a 3d 77 b3 a2 8e c2 e4 81
+
+
+now breakdown the following header in smaller informations.
+
+1) Source Port (16 bits) : Value : 01 bb , Decimal: 443
+Identifies the port number of the sender. Port 443 is commonly used for HTTPS.
+
+
+
+2) Destination Port (16 bits) : Value : ae 40 , Decimal: 44608
+Identifies the port number of the receiver.
+
+
+
+3) Sequence Number (32 bits) : Value : ab 8c 21 df , Decimal: 2874541535
+This number identifies the position of the first data byte in the packet in the overall TCP stream.
+
+4) Acknowledgment Number (32 bits) : Value: 0b e5 23 3a,  Decimal: 197216186
+If the ACK flag is set, this field contains the value of the next sequence number that the sender of the packet is expecting to receive.
+
+5) Data Offset (4 bits) and Reserved (3 bits) and Flags (9 bits) : 
+
+	a) Data Offset (4 bits) : Value : 8 (from the first nibble of 80)
+	Specifies the size of the TCP header in 32-bit words. Here, 8 indicates that the header is 32 bytes long.
+ 
+ 
+	b) Reserved (3 bits) : Value : 0 (from the next 3 bits of 80)
+	
+	c) Flags (9 bits) : Hex Value: 10 (from the last 9 bits of 80 10)
+	Indicates the control flags : ACK flag is set (Acknowledgment field significant).
+	
+	
+6) Window Size (16 bits) : Value: 00 49 , Decimal: 73
+Specifies the size of the sender's receive window (the buffer space available), which controls the flow of data.
+
+
+7) Checksum (16 bits) : Value: a5 24
+Used for error-checking the TCP header and data.
+
+
+8) Urgent Pointer (16 bits) : Value: 00 00
+If the URG flag is set, this field indicates the offset from the sequence number to the last urgent data byte. In this case, the URG flag is not set.
+
+
+9) Options (if any, variable length) : Values: 01 01 08 0a 3d 77 b3 a2 8e c2 e4 81
+These are options fields that provide additional functionalities, such as timestamp options in this case.
+
+
+
+
+so we fragment the whole header into segments which represent the above qualities.

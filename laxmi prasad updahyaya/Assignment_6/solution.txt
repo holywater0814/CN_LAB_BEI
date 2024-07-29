@@ -1,0 +1,12 @@
+The ipv6 header is 40 byte long.
+The different fields on ipv6 headers are:
+   
+
+Version (4 bits)  : Indicates the IP version, which is 6 for IPv6.
+Traffic Class (8 bits)  : Similar to the Type of Service (ToS) field in IPv4, it is used for quality of service (QoS) and priority handling.
+Flow Label (20 bits)  : Used to identify and handle packets that belong to the same flow, which can help with traffic management and quality of service.
+Payload Length (16 bits)  : Specifies the length of the payload, including any extension headers, in bytes.
+Next Header (8 bits)  : Identifies the type of header immediately following the IPv6 header. This field is used to indicate the type of the next header, which could be a higher-layer protocol header (like TCP or UDP) or an extension header.
+Hop Limit (8 bits)  : Similar to the Time-to-Live (TTL) field in IPv4, this field is used to limit the lifetime of a packet, preventing it from circulating indefinitely.
+Source Address (128 bits)  : The IP address of the packet's originator.
+Destination Address (128 bits)  : The IP address of the packet's intended recipient.

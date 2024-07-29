@@ -1,0 +1,23 @@
+The size of a UDP (User Datagram Protocol) header is fixed at 8 bytes (64 bits). The header contains the following fields:
+
+1) Source Port (16 bits) : Identifies the port number of the sender.
+2) Destination Port (16 bits) : Identifies the port number of the receiver.
+3) Length (16 bits) : Specifies the total length of the UDP header and data.
+4) Checksum (16 bits)  : Used for error-checking of the header and data.
+
+
+a7 78 00 35 00 30 84 e7
+
+The above bytes are captured in wireshark which is udp header.This udp header define the following things:
+
+1) Source Port (16 bits) : Value: a7 78   Decimal: 42872
+Description: Identifies the port number of the sender. So , The port number of sender is 42872.
+
+2) Destination port (16 bits) : Value: 00 35   Decimal: 53
+Description: Identifies the port number of the receiver. Port 53 is commonly used for DNS (Domain Name System) services.
+
+3) Length (16 bits) : Value: 00 30  Decimal: 48
+Description: Specifies the total length of the UDP packet, including the header and data, in bytes.
+
+4) Checksum (16 bits) : Value: 84 e7
+Description: Used for error-checking of the UDP header and data, ensuring the integrity of the data during transmission.
