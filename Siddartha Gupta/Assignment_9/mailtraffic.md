@@ -5,7 +5,7 @@
 - **Frame 60:** The server (smtp.gmail.com) sends a "220" response indicating that it is ready to start communication. The message contains the ESMTP (Extended Simple Mail Transfer Protocol) identifier and a unique session identifier.
 - **Frame 62:** The client sends the "EHLO" command to introduce itself and request extended SMTP capabilities from the server.
 - **Frame 74:** The server responds with a "250" message, listing its capabilities.
-- **Frame 76:** The client sends mail
+- **Frame 76:** The client sends mail.
 
 ## Key Information:
 
