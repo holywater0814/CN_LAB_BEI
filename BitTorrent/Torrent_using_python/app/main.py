@@ -65,11 +65,6 @@ def compute_info_hash2(info):
     sha1_hash = hashlib.sha1(info_bencoded).digest()
     return sha1_hash
 
-def send_message(s, message_id, payload=b''):
-    message = struct.pack('>I', len(payload) + 1) + struct.pack('B', message_id) + payload
-    print(f"Sending message: Length: {len(payload) + 1}, ID: {message_id}, Payload: {payload.hex()}")
-    interested_payload = struct.pack(">IB", 1, 2)
-    s.sendall(interested_payload)
 
 def receive_message(s):
     length = s.recv(4)
